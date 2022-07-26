@@ -4,12 +4,14 @@ from client import add_car_to_police_database
 
 
 
-
-
 if __name__ == "__main__":
     """
-    
+    Flyweight: Exibindo o estado compartilhado ({s}) e único ({u})
     """
+
+    from datetime import date
+    today = date.today()
+    print("Today's date:", today)
 
     factory = FlyweightFactory([
         ["Chevrolet", "Camaro2018", "pink"],
